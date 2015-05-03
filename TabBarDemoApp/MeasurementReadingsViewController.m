@@ -52,12 +52,11 @@ const int LIST_SIZE = 1000;
         return [first compare:second];
     }];
     
-    //1. sort the array
     //2. create a dictionary, where each key is the field you'd like to group by, and each
-    //   value is an array of items that contain equal values according your desired grouping
+    //   value is an array of items (grouped by whatever you are grouping by)
     //3. for your number of sections, get the number of keys
-    //4. for the number of rows in each section, get the key at the current index of your dictionary, then
-    //   get the element (which is an array) for that given key. return that arrays count.
+    //4. for the number of rows in each section, get the key at the current section, then
+    //   get the element (which is an array) for that given key. and return that arrays count.
     //5. for the actual cells, get the key using indexpath.section, then do the same as #4 to get the
     //   element (array) for that key. Finally, get the specific item inside the array using indexpath.row
     
